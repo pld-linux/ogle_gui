@@ -12,6 +12,7 @@ Patch0:		%{name}-libdir.patch
 URL:		http://www.dtek.chalmers.se/~dvd/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	libglade-devel
 BuildRequires:	ogle-devel >= 0.9.1
@@ -32,6 +33,7 @@ Linuksa obs³uguj±cy DVD menu!
 %patch0 -p0
 
 %build
+%{__gettextize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
