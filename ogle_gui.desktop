@@ -7,5 +7,5 @@ Exec=ogle -u gui
 Icon=/usr/share/ogle_gui/ogle.xpm
 Terminal=false
 Type=Application
-Categories=AudioVideo;Player;
+Categories=GTK;GNOME;AudioVideo;Player;
 # vi: encoding=utf-8
