@@ -5,8 +5,6 @@ Version:	0.8.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Group(de):	X11/Applikationen/Multimedia
-Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://www.dtek.chalmers.se/groups/dvd/dist/%{name}-%{version}.tar.gz
 URL:		http://www.dtek.chalmers.se/~dvd/
 BuildRequires:	ogle-devel
