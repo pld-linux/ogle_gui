@@ -8,7 +8,10 @@ Group:		X11/Applications/Multimedia
 Source0:	http://www.dtek.chalmers.se/groups/dvd/dist/%{name}-%{version}.tar.gz
 # Source0-md5:	e685aa3046f9da13532ede9300f2f794
 Source1:	%{name}.desktop
+Patch0:		%{name}-libdir.patch
 URL:		http://www.dtek.chalmers.se/~dvd/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+-devel
 BuildRequires:	libglade-devel
 BuildRequires:	ogle-devel >= 0.9.1
@@ -26,8 +29,12 @@ Linuksa obs³uguj±cy DVD menu!
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 
 %{__make}
