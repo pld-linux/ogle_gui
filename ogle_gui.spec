@@ -44,6 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
-%{_datadir}/gnome/help/ogle
+%attr(755,root,root) %{_libdir}/ogle/*
+%{_libdir}/locale/*
 %{_pixmapsdir}/ogle_gui
