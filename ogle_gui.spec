@@ -29,7 +29,7 @@ Linuxa obs³uguj±cy DVD menu!
 %setup -q
 
 %build
-%configure
+%configure --pixmapsdir=%{_pixmapsdir}
 
 %{__make}
 
@@ -45,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/ogle/*
-%{_libdir}/locale/*
-%{_pixmapsdir}/ogle_gui
+%{_libdir}/locale/*/*/*
+%{_libdir}/ogle_gui
