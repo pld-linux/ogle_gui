@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.dtek.chalmers.se/groups/dvd/dist/%{name}-%{version}.tar.gz
+# Source0-md5:	92319326640a91a55b3219864710bb50
 URL:		http://www.dtek.chalmers.se/~dvd/
 BuildRequires:	ogle-devel
 BuildRequires:	gtk+-devel
