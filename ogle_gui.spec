@@ -1,7 +1,7 @@
 Summary:	Ogle DVD Player GUI
 Summary(pl):	Interfejs u¿ytkownika odtwarzacza DVD Ogle
 Name:		ogle_gui
-Version:	0.8.3
+Version:	0.8.5
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
