@@ -29,7 +29,7 @@ Linuxa obs³uguj±cy DVD menu!
 %setup -q
 
 %build
-%configure --pixmapsdir=%{_pixmapsdir}
+%configure
 
 %{__make}
 
