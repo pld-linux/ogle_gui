@@ -12,8 +12,6 @@ BuildRequires:	gtk+-devel
 %requires_eq	ogle
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 GNOME GUI for Ogle, (the first) DVD player for Linux that supports DVD
