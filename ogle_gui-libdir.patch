@@ -1,0 +1,20 @@
+--- configure.in~	2003-11-05 21:46:13.000000000 +0100
++++ configure.in	2004-08-19 02:12:14.000000000 +0200
+@@ -7,14 +7,10 @@
+ AM_MAINTAINER_MODE
+ 
+ dnl Check that ogle is installed in the prefix, this is needed
+-if test "x${exec_prefix}" = "xNONE"; then
+-  if test "x${prefix}" = "xNONE"; then
+-    ogle_pkglibdir=${ac_default_prefix}/lib/ogle
+-  else
+-    ogle_pkglibdir=${prefix}/lib/ogle
+-  fi
++if test "x${libdir}" = "xNONE"; then
++  ogle_pkglibdir=${ac_default_prefix}/lib/ogle
+ else
+-  ogle_pkglibdir=${exec_prefix}/lib/ogle
++  ogle_pkglibdir=${libdir}/ogle
+ fi
+ 
+ AC_MSG_CHECKING(for ogle helper dir)
