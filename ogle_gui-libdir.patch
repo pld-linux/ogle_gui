@@ -18,3 +18,21 @@
  fi
  
  AC_MSG_CHECKING(for ogle helper dir)
+@@ -87,7 +87,7 @@
+ fi
+ 
+ AC_CHECK_LIB(dvdcontrol, DVDRequestInput, 
+-  [ DVDLIBS="-L$dvd_path/lib/ogle -rpath $dvd_path/lib/ogle -ldvdcontrol" 
++  [ DVDLIBS="-L${ogle_pkglibdir} -rpath ${ogle_pkglibdir} -ldvdcontrol" 
+     DVD_INCLUDEDIR=-I$dvd_path/include
+   ],
+   [ AC_MSG_ERROR([
+@@ -95,7 +95,7 @@
+ * Install it and/or specify the location for it using --with-dvdcontrol=DIR.
+ * For example ... --with-dvdcontrol=/usr/local ] )
+   ],
+-  -L$dvd_path/lib/ogle -lmsgevents)
++  -L${ogle_pkglibdir} -lmsgevents)
+ AC_SUBST(DVDLIBS)
+ 
+ AC_ARG_WITH(dvd-includes, 
