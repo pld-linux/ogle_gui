@@ -8,8 +8,9 @@ Group:		X11/Applications/Multimedia
 # Source0-md5:	2010a629b3a16d8228529b092ebdde7e
 Source0:	http://www.dtek.chalmers.se/groups/dvd/dist/%{name}-%{version}.tar.gz
 URL:		http://www.dtek.chalmers.se/~dvd/
-BuildRequires:	ogle-devel >= 0.9.1
 BuildRequires:	gtk+-devel
+BuildRequires:	libglade-devel
+BuildRequires:	ogle-devel >= 0.9.1
 %requires_eq	ogle
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
