@@ -33,6 +33,7 @@ Linuksa obs³uguj±cy DVD menu!
 %patch0 -p0
 
 %build
+%{__gettextize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
