@@ -1,12 +1,12 @@
 Summary:	Ogle DVD Player GUI
 Summary(pl):	Interfejs u¿ytkownika odtwarzacza DVD Ogle
 Name:		ogle_gui
-Version:	0.9.1
+Version:	0.9.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-# Source0-md5:	2010a629b3a16d8228529b092ebdde7e
 Source0:	http://www.dtek.chalmers.se/groups/dvd/dist/%{name}-%{version}.tar.gz
+# Source0-md5:	e685aa3046f9da13532ede9300f2f794
 URL:		http://www.dtek.chalmers.se/~dvd/
 BuildRequires:	gtk+-devel
 BuildRequires:	libglade-devel
