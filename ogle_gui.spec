@@ -21,7 +21,7 @@ menus!
 
 %description -l pl
 Interfejs u¿ytkownika dla Ogle, (pierwszego) odtwarzacza DVD dla
-Linuxa obs³uguj±cy DVD menu!
+Linuksa obs³uguj±cy DVD menu!
 
 %prep
 %setup -q
