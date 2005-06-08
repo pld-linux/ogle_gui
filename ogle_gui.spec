@@ -2,7 +2,7 @@ Summary:	Ogle DVD Player GUI
 Summary(pl):	Interfejs u¿ytkownika odtwarzacza DVD Ogle
 Name:		ogle_gui
 Version:	0.9.2
-Release:	6
+Release:	7
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://www.dtek.chalmers.se/groups/dvd/dist/%{name}-%{version}.tar.gz
@@ -13,8 +13,8 @@ URL:		http://www.dtek.chalmers.se/~dvd/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+-devel
-BuildRequires:	libglade-devel
+BuildRequires:	gtk+2-devel
+BuildRequires:	libglade2-devel
 BuildRequires:	ogle-devel >= 0.9.1
 %requires_eq	ogle
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,10 +34,11 @@ Linuksa obs³uguj±cy DVD menu!
 
 %build
 %{__gettextize}
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure --enable-gtk2
 
 %{__make}
 
