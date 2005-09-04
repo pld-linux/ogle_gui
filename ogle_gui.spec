@@ -15,6 +15,7 @@ BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libglade2-devel
+BuildRequires:	libtool
 BuildRequires:	ogle-devel >= 0.9.1
 %requires_eq	ogle
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
