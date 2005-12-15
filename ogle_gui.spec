@@ -13,9 +13,10 @@ URL:		http://www.dtek.chalmers.se/~dvd/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel
-BuildRequires:	libglade2-devel
+BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	libglade2-devel >= 1:2.0.0
 BuildRequires:	libtool
+BuildRequires:	libxml2-devel >= 2.4.19
 BuildRequires:	ogle-devel >= 0.9.1
 BuildRequires:	pkgconfig
 %requires_eq	ogle
