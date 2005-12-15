@@ -14,13 +14,10 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
-# for AM_PATH_GTK
-BuildRequires:	gtk+-devel
-# for AM_PATH_LIBGLADE
-BuildRequires:	libglade-devel
 BuildRequires:	libglade2-devel
 BuildRequires:	libtool
 BuildRequires:	ogle-devel >= 0.9.1
+BuildRequires:	pkgconfig
 %requires_eq	ogle
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,6 +33,11 @@ Linuksa obs³uguj±cy DVD menu!
 %prep
 %setup -q
 %patch0 -p0
+
+cat >> acinclude.m4 <<EOF
+AC_DEFUN([AM_PATH_GTK],[$3])
+AC_DEFUN([AM_PATH_LIBGLADE],[$2])
+EOF
 
 %build
 %{__gettextize}
