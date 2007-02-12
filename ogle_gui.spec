@@ -1,5 +1,5 @@
 Summary:	Ogle DVD Player GUI
-Summary(pl):	Interfejs uøytkownika odtwarzacza DVD Ogle
+Summary(pl.UTF-8):   Interfejs u≈ºytkownika odtwarzacza DVD Ogle
 Name:		ogle_gui
 Version:	0.9.2
 Release:	7.1
@@ -27,9 +27,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GNOME GUI for Ogle, (the first) DVD player for Linux that supports DVD
 menus!
 
-%description -l pl
-Interfejs uøytkownika dla Ogle, (pierwszego) odtwarzacza DVD dla
-Linuksa obs≥uguj±cy DVD menu!
+%description -l pl.UTF-8
+Interfejs u≈ºytkownika dla Ogle, (pierwszego) odtwarzacza DVD dla
+Linuksa obs≈ÇugujƒÖcy DVD menu!
 
 %prep
 %setup -q
