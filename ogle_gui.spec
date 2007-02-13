@@ -1,5 +1,5 @@
 Summary:	Ogle DVD Player GUI
-Summary(pl.UTF-8):   Interfejs użytkownika odtwarzacza DVD Ogle
+Summary(pl.UTF-8):	Interfejs użytkownika odtwarzacza DVD Ogle
 Name:		ogle_gui
 Version:	0.9.2
 Release:	7.1
