@@ -1,0 +1,13 @@
+--- ogle_gui-0.9.2/src/Makefile.am~	2014-01-03 16:02:17.000000000 +0100
++++ ogle_gui-0.9.2/src/Makefile.am	2014-01-03 16:02:41.095116048 +0100
+@@ -16,8 +16,8 @@
+   @DEFS@
+ 
+ # To get ogle_gui installed in the ogle pkglibdir
+-pkglibdir=$(libdir)/ogle
+-pkglib_PROGRAMS = ogle_gui
++pkglibexecdir=$(libdir)/ogle
++pkglibexec_PROGRAMS = ogle_gui
+ 
+ ogle_gui_SOURCES = \
+ 	main.c myintl.h \
