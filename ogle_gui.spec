@@ -14,7 +14,7 @@ Patch2:		am.patch
 URL:		http://www.dtek.chalmers.se/~dvd/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	libglade2-devel >= 1:2.0.0
 BuildRequires:	libtool
