@@ -35,9 +35,9 @@ Linuksa obsługujący DVD menu!
 
 %prep
 %setup -q
-%patch0 -p0
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p0
+%patch -P1 -p1
+%patch -P2 -p1
 
 cat >> acinclude.m4 <<EOF
 AC_DEFUN([AM_PATH_GTK],[$3])
